@@ -1,0 +1,4 @@
+name = Mymodule
+description = This is my Custom Module
+core = 7.x
+files[] = mymodule.module

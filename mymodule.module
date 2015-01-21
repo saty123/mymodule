@@ -1,1 +1,24 @@
+
 <?php
+
+/**
+ * Implements hook_menu().
+**/
+
+function mymodule_menu() {
+  $items = array();
+
+  $items['mymodule'] = array(
+    'page callback' => 'mymodule_intro',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function mymodule_intro()
+{
+  return array(
+    "#markup" => t("This module is only for learning to how to create module in drupal 7"),
+    );
+}
